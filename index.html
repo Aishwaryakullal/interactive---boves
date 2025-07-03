@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>YAY! It's BOGO</h2>
+
+    <form id="unit-form">
+      <label class="card">
+        <input type="radio" name="unit" value="1" />
+        <div class="content">
+          <div class="label">1 Unit <span class="tag pink">10% Off</span></div>
+          <div class="price">$10.00 USD <span class="old">$24.00 USD</span></div>
+          <div class="subtext">Standard Price</div>
+        </div>
+      </label>
+
+      <label class="card active popular">
+        <input type="radio" name="unit" value="2" checked />
+        <div class="content">
+          <div class="label">2 Unit <span class="tag red">20% Off</span></div>
+          <div class="price">$18.00 USD <span class="old">$24.00 USD</span></div>
+          <div class="subtext">MOST POPULAR</div>
+          <div class="variants">
+            <div class="variant">
+              <label>#1</label>
+              <select>
+                <option>S</option><option>M</option><option>L</option>
+              </select>
+              <select>
+                <option>Black</option><option>White</option>
+              </select>
+            </div>
+            <div class="variant">
+              <label>#2</label>
+              <select>
+                <option>S</option><option>M</option><option>L</option>
+              </select>
+              <select>
+                <option>Colour</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </label>
+
+      <label class="card">
+        <input type="radio" name="unit" value="3" />
+        <div class="content">
+          <div class="label">3 Unit <span class="tag purple">30% Off</span></div>
+          <div class="price">$24.00 USD <span class="old">$24.00 USD</span></div>
+        </div>
+      </label>
+    </form>
+
+    <div class="footer">
+      <div class="delivery">Free Delivery</div>
+      <div class="total">Total : $18.00 USD</div>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+    <p class="powered">Powered by Pumper</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
